@@ -16,7 +16,6 @@ Url:		http://search.cpan.org/dist/%{module}
 Buildrequires:	perl-devel
 %endif
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 podtohtml converts POD documentation to HTML. It is based on the generic
