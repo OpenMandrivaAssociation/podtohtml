@@ -1,7 +1,7 @@
 %define name	podtohtml
 %define Name	PodToHTML
-%define version	0.05
-%define release	%mkrel 3
+%define version	0.07
+%define release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -9,12 +9,8 @@ Release:	%{release}
 Summary:	Convert POD documentation to HTML
 License:	GPL or Artistic
 Group:		Development/Perl
-Source:		http://search.cpan.org/CPAN/authors/id/N/NI/NI-S/%{Name}-%{version}.tar.bz2
-Patch:		%{name}-0.05.namespace-fix.patch
-Url:		http://search.cpan.org/dist/%{module}
-%if %{mdkversion} < 1010
-Buildrequires:	perl-devel
-%endif
+Url:		http://search.cpan.org/dist/%{Name}
+Source:		http://search.cpan.org/CPAN/authors/id/B/BD/BDFOY/%{Name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
@@ -29,7 +25,6 @@ The Generated HTML uses relative links.
 
 %prep
 %setup -q -n %{Name}-%{version}
-%patch -p 1
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
