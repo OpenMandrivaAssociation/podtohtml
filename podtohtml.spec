@@ -1,7 +1,7 @@
 %define name	podtohtml
 %define Name	PodToHTML
 %define version	0.07
-%define release	5
+%define release	6
 
 Name:		%{name}
 Version:		%{version}
