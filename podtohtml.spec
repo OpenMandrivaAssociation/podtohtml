@@ -9,7 +9,7 @@ Release:		%{release}
 Summary:		Convert POD documentation to HTML
 License:		GPL or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{Name}
+Url:		https://search.cpan.org/dist/%{Name}
 Source:		http://search.cpan.org/CPAN/authors/id/B/BD/BDFOY/%{Name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-HTML-Tree
