@@ -12,6 +12,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{Name}
 Source:		http://search.cpan.org/CPAN/authors/id/B/BD/BDFOY/%{Name}-%{version}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl-HTML-Tree
 BuildRequires:	perl-HTML-Format
 BuildRequires:	perl-devel
